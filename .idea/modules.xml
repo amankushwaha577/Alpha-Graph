@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Alpha-Graph.iml" filepath="$PROJECT_DIR$/.idea/Alpha-Graph.iml" />
       <module fileurl="file://$PROJECT_DIR$/_03 Graph-AdjacencyList Undirected &amp; Directed Non-Wighted Graph/_03 Graph-AdjacencyList Undirected &amp; Directed Non-Wighted Graph.iml" filepath="$PROJECT_DIR$/_03 Graph-AdjacencyList Undirected &amp; Directed Non-Wighted Graph/_03 Graph-AdjacencyList Undirected &amp; Directed Non-Wighted Graph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_04 Graph-AdjacencyList Undirected &amp; Directed Wighted Graph/_04 Graph-AdjacencyList Undirected &amp; Directed Wighted Graph.iml" filepath="$PROJECT_DIR$/_04 Graph-AdjacencyList Undirected &amp; Directed Wighted Graph/_04 Graph-AdjacencyList Undirected &amp; Directed Wighted Graph.iml" />
     </modules>
   </component>
 </project>

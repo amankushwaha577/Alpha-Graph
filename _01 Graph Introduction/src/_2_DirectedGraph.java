@@ -47,6 +47,30 @@ public class _2_DirectedGraph {
         graph[1].add(new Edge(1, 3)); // Edge from vertex 1 to vertex 3  (1 -> 3)
 
         graph[2].add(new Edge(2, 4)); // Edge from vertex 2 to vertex 4  (2 -> 4)
+
+
+         /*
+            Output Graph:
+
+            Vertex 0 -> [1] [2]  // Directed edges: 0 -> 1, 0 -> 2
+            Vertex 1 -> [2] [3]  // Directed edges: 1 -> 2, 1 -> 3
+            Vertex 2 -> [4]      // Directed edge: 2 -> 4
+
+            Graph Visualization:
+
+                 0
+                / \
+               1 - 2
+                \   \
+                 3   4
+
+            Directed edges:
+            - 0 -> 1
+            - 0 -> 2
+            - 1 -> 2
+            - 1 -> 3
+            - 2 -> 4
+        */
     }
 
     /**
@@ -67,6 +91,8 @@ public class _2_DirectedGraph {
         // Vertex 0 -> [1] [2]   // Directed edges: 0 -> 1, 0 -> 2
         // Vertex 1 -> [2] [3]   // Directed edges: 1 -> 2, 1 -> 3
         // Vertex 2 -> [4]       // Directed edge: 2 -> 4
+
+
     }
 
     public static void main(String[] args) {
@@ -81,25 +107,4 @@ public class _2_DirectedGraph {
     }
 }
 
-/*
-Output Graph:
 
-Vertex 0 -> [1] [2]  // Directed edges: 0 -> 1, 0 -> 2
-Vertex 1 -> [2] [3]  // Directed edges: 1 -> 2, 1 -> 3
-Vertex 2 -> [4]      // Directed edge: 2 -> 4
-
-Graph Visualization:
-
-     0
-    / \
-   1   2
-    \   \
-     3   4
-
-Directed edges:
-- 0 -> 1
-- 0 -> 2
-- 1 -> 2
-- 1 -> 3
-- 2 -> 4
-*/

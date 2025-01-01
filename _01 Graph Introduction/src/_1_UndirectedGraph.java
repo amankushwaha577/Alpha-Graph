@@ -105,6 +105,13 @@ public class _1_UndirectedGraph {
 
         // Print the graph
         printGraph(graph);
+
+        System.out.print("Neighbors of vertex 2: ");
+        for (int i=0; i<graph[2].size();i++) { // for (Edge edge : graph[2]) {
+            Edge e = graph[2].get(i);
+            System.out.print(e.dest + " "); // Print the destination of each edge from vertex 2
+        }
+        System.out.println(); // New line after printing neighbors
     }
 }
 

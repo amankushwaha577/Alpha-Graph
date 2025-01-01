@@ -26,14 +26,14 @@ public class _1_UndirectedGraph {
         }
 
         // If you have 5 vertices (vertices = 5), the graph array will look like this initially:
-        // graph[0] = null;
+        // graph[0] = null;  // we can't apply add() on null => Throw Error
         // graph[1] = null;
         // graph[2] = null;
         // graph[3] = null;
         // graph[4] = null;
 
         // After the loop runs, each element of the array will point to an empty ArrayList:
-        // graph[0] = new ArrayList<>();  // An empty list for vertex 0
+        // graph[0] = new ArrayList<>();  // An empty list for vertex 0   // now we can apply add() on graph[0]
         // graph[1] = new ArrayList<>();  // An empty list for vertex 1
         // graph[2] = new ArrayList<>();  // An empty list for vertex 2
         // graph[3] = new ArrayList<>();  // An empty list for vertex 3

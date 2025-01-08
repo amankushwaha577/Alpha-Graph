@@ -51,6 +51,8 @@ public class _1_UndirectedGraph {
         // graph[3] = new ArrayList<>();  // An empty list for vertex 3
         // graph[4] = new ArrayList<>();  // An empty list for vertex 4
 
+        // graph = [ArrayList<>,ArrayList<>,ArrayList<>,ArrayList<>,ArrayList<> ]
+
         // Add edges to the graph (for undirected edges, we add reverse edges)
 
         graph[0].add(new Edge(0, 1)); // Edge from vertex 0 to vertex 1
@@ -128,6 +130,8 @@ public class _1_UndirectedGraph {
     public static void main(String[] args) {
         int vertices = 5; // Number of vertices
         ArrayList<Edge>[] graph = new ArrayList[vertices]; // Array of adjacency lists
+        // A. new ArrayList[vertices] creates an array of raw type ArrayList with size vertices.
+        // B. The type is then cast to ArrayList<Edge>[].
 
         // Create the graph
         createGraph(graph);

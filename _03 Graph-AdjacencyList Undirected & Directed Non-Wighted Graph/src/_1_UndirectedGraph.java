@@ -2,6 +2,12 @@ import java.util.*;
 // Adjacency List - ArrayList Of ArrayLists
 public class _1_UndirectedGraph {
     // Class to represent an edge in the graph
+
+    // A. int aar[]
+    //    => arr is Array, with int elements.
+    // B. ArrayList<Edge> graph[] = new ArrayList[5];
+    //    => graph is a array, with 5 'ArrayList' type elements
+    //    => Each 'ArrayList' have 'Edge' type elements.
     static class Edge {
         int src;  // Source vertex
         int dest; // Destination vertex

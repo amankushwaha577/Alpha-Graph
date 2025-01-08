@@ -8,6 +8,8 @@ public class _1_UndirectedGraph {
     // B. ArrayList<Edge> graph[] = new ArrayList[5];
     //    => graph is a array, with 5 'ArrayList' type elements
     //    => Each 'ArrayList' have 'Edge' type elements.
+
+    // To implement this edge we will create static class 'Edge'
     static class Edge {
         int src;  // Source vertex
         int dest; // Destination vertex

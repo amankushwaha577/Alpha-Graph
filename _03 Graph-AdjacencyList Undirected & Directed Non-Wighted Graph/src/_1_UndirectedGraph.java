@@ -10,7 +10,10 @@ public class _1_UndirectedGraph {
     //    => Each 'ArrayList' have 'Edge' type elements.
 
     // To implement this edge we will create static class 'Edge'
-    static class Edge {
+    static class Edge { // One edge at a time.
+        // 1------> 2
+        // source = 1
+        // destination = 2
         int src;  // Source vertex
         int dest; // Destination vertex
 
@@ -19,6 +22,7 @@ public class _1_UndirectedGraph {
             this.src = src;
             this.dest = dest;
         }
+        //  { 1, 2 }
     }
 
     /**
@@ -48,23 +52,40 @@ public class _1_UndirectedGraph {
         // graph[4] = new ArrayList<>();  // An empty list for vertex 4
 
         // Add edges to the graph (for undirected edges, we add reverse edges)
+
         graph[0].add(new Edge(0, 1)); // Edge from vertex 0 to vertex 1
+        // [ [{0,1}] , ArrayList<>, ArrayList<>, ArrayList<>, ArrayList<>]
         graph[1].add(new Edge(1, 0)); // Reverse edge from vertex 1 to vertex 0
+        // [ [{0,1}] , [{1,0}], ArrayList<>, ArrayList<>, ArrayList<>]
 
         graph[0].add(new Edge(0, 2)); // Edge from vertex 0 to vertex 2
+        // [ [{0,1},{0,2}] , [{1,0}], ArrayList<>, ArrayList<>, ArrayList<>]
         graph[2].add(new Edge(2, 0)); // Reverse edge from vertex 2 to vertex 0
+        // [ [{0,1},{0,2}] , [{1,0}], [{2,0}], ArrayList<>, ArrayList<>]
 
         graph[1].add(new Edge(1, 2)); // Edge from vertex 1 to vertex 2
+        // [ [{0,1},{0,2}] , [{1,0},{1,2}], [{2,0}], ArrayList<>, ArrayList<>]
         graph[2].add(new Edge(2, 1)); // Reverse edge from vertex 2 to vertex 1
+        // [ [{0,1},{0,2}] , [{1,0},{1,2}], [{2,0},{2,1}], ArrayList<>, ArrayList<>]
 
         graph[1].add(new Edge(1, 3)); // Edge from vertex 1 to vertex 3
+        // [ [{0,1},{0,2}] , [{1,0},{1,2},{1,3}], [{2,0},{2,1}], ArrayList<>, ArrayList<>]
         graph[3].add(new Edge(3, 1)); // Reverse edge from vertex 3 to vertex 1
+        // [ [{0,1},{0,2}] , [{1,0},{1,2},{1,3}], [{2,0},{2,1}], [{3,1}], ArrayList<>]
 
         graph[2].add(new Edge(2, 4)); // Edge from vertex 2 to vertex 4
+        // [ [{0,1},{0,2}] , [{1,0},{1,2},{1,3}], [{2,0},{2,1},{2,4}], [{3,1}], ArrayList<>]
         graph[4].add(new Edge(4, 2)); // Reverse edge from vertex 4 to vertex 2
+        // [ [{0,1},{0,2}] , [{1,0},{1,2},{1,3}], [{2,0},{2,1},{2,4}], [{3,1}], [{4,2}]]
 
         /*
             Output Graph:
+            [ [{0,1},{0,2}] ,
+              [{1,0},{1,2},{1,3}],
+              [{2,0},{2,1},{2,4}],
+              [{3,1}],
+              [{4,2}]
+            ]
 
             Vertex 0 -> [1] [2]
             Vertex 1 -> [0] [2] [3]

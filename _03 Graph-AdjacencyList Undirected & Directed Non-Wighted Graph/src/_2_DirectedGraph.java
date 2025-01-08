@@ -39,6 +39,8 @@ public class _2_DirectedGraph {
         // graph[3] = new ArrayList<>();  // An empty list for vertex 3
         // graph[4] = new ArrayList<>();  // An empty list for vertex 4
 
+        // graph = [ArrayList<>,ArrayList<>,ArrayList<>,ArrayList<>,ArrayList<> ]
+
         // Add directed edges to the graph (no reverse edges)
         graph[0].add(new Edge(0, 1)); // Edge from vertex 0 to vertex 1  (0 -> 1)
         graph[0].add(new Edge(0, 2)); // Edge from vertex 0 to vertex 2  (0 -> 2)
@@ -47,6 +49,8 @@ public class _2_DirectedGraph {
         graph[1].add(new Edge(1, 3)); // Edge from vertex 1 to vertex 3  (1 -> 3)
 
         graph[2].add(new Edge(2, 4)); // Edge from vertex 2 to vertex 4  (2 -> 4)
+
+        // [ [{0,1},{0,2}] , [{1,2},{1,3}], [{2,4}], ArrayList<>, ArrayList<>]
 
 
          /*

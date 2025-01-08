@@ -1,5 +1,5 @@
 import java.util.*;
-
+// Adjacency List - Array Of Lists
 public class _1_UndirectedGraph {
     // Class to represent an edge in the graph
     static class Edge {

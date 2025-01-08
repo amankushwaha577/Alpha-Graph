@@ -15,19 +15,19 @@ public class Main {
  *   ----------------------------------
  *      1. Directed Graph (Digraph):
  *         Edges have a direction. (e.g., A -> B)
- *      2. Undirected Graph:
+ *         Undirected Graph :
  *         Edges don't have a direction. (e.g., A - B)
  *
- *      3. Weighted Graph:
+ *      2. Weighted Graph:
  *         Edges have weights or costs associated. (e.g., A -5-> B)
- *      4. Unweighted Graph:
+ *         Unweighted Graph:
  *         All edges have equal or no weights.
  *
- *      5. Cyclic and Acyclic Graphs:
+ *      3. Cyclic and Acyclic Graphs:
  *         Cyclic: Contains at least one cycle.
  *         Acyclic: No cycles (e.g., Trees).
  *
- *      6. Connected and Disconnected Graphs:
+ *      4. Connected and Disconnected Graphs:
  *         Connected: All nodes are reachable.
  *         Disconnected: Contains isolated nodes.
  *
@@ -71,9 +71,9 @@ public class Main {
  *
  * Applications of Graphs:
  * -------------------------------------------------
- * - Social Networks: Modeling connections and relationships.
+ * - Social Networks: Instagram connections | Modeling connections and relationships.
  * - Web Crawling: Representing the internet as a graph.
- * - Maps and Navigation: Routing and pathfinding.
+ * - Maps and Navigation: GoogleMap | Routing and pathfinding.
  * - Recommendation Systems: Finding similar users or products.
  * - Dependency Resolution: Task scheduling (e.g., Topological sort).
  *
